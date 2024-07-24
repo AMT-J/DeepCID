@@ -10,7 +10,6 @@ Raman spectra contain abundant information from molecules but are difficult to a
 
 ```
 conda create -n DPCID python=3.8  
-conda activate DPCID
 ```
 
 ## Install dependent packages
