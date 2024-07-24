@@ -52,9 +52,9 @@ $envVarsPath = Join-Path $env:CONDA_PREFIX 'etc\conda\activate.d\env_vars.bat'
 
 # Download the model and run directly
 
-Since the model exceeded the limit, we have uploaded all the models and the  information of mixtures to the Baidu SkyDrive and Google driver.
+Since the model exceeded the limit, we have uploaded all the models and the  information of mixtures to Release.
 
-Download at: [Baidu SkyDrive](https://pan.baidu.com/s/1I0WMEvKvPNicy-i4Ru6uHQ) or [Google driver](https://drive.google.com/drive/folders/1DzMqiJRPDaLn2PcFW_myY_p0PO_VVEpS?usp=sharing)
+[Download](https://github.com/AMT-J/DeepCID/releases/tag/v1.0.0)
 
 **1.Training your model**
 
