@@ -6,33 +6,37 @@ Raman spectra contain abundant information from molecules but are difficult to a
 </div>
 
 # Installation
-## Install Python
+## Env
 
-Python 3.6 is recommended.
-
-[python](https://www.python.org)
-
-## Install tensorflow
-
-[tensorflow](https://www.tensorflow.org)
+conda create -n DPCID python=3.8
+conda activate DPCID
 
 ## Install dependent packages
 
 **1.Numpy**
 
-pip install numpy
+pip install numpy==1.19.2
 
-**2.Scipy**
+**2.Tensorflow**
 
-pip install Scipy
+pip install tensorflow-gpu==2.5.0
 
-**3.Matplotlib**
+**3.Scipy**
 
-pip install Matplotlib
+pip install scipy==1.6.0
 
-# Clone the repo and run it directly
+**4.Matplotlib**
 
-[git clone at：https://github.com/xiaqiong/DeepCID.git](https://github.com/xiaqiong/DeepCID.git) 
+pip install matplotlib==3.3.4
+
+**5.Cuda**
+conda install -c conda-forge cudatoolkit=11.2
+conda install -c conda-forge cudnn=8.1.0
+
+$envVarsPath = Join-Path $env:CONDA_PREFIX 'etc\conda\activate.d\env_vars.bat'
+"set PATH=%CONDA_PREFIX%\Library\bin;%PATH%" | Out-File -FilePath $envVarsPath -Encoding ASCII
+"set PATH=%CONDA_PREFIX%\Library\lib;%PATH%" | Out-File -FilePath $envVarsPath -Append -Encoding ASCII
+
 
 # Download the model and run directly
 
