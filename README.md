@@ -29,7 +29,8 @@ pip install scipy==1.6.0
 
 pip install matplotlib==3.3.4  
 
-**5.Cuda**
+**5.Cuda**  
+
 conda install -c conda-forge cudatoolkit=11.2  
 conda install -c conda-forge cudnn=8.1.0 
 
