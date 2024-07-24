@@ -8,29 +8,40 @@ Raman spectra contain abundant information from molecules but are difficult to a
 # Installation
 ## Env
 
+```
 conda create -n DPCID python=3.8  
 conda activate DPCID
+```
 
 ## Install dependent packages
 
 **1.Numpy**
 
+```
 pip install numpy==1.19.2
+```
 
 **2.Tensorflow**
 
+```
 pip install tensorflow-gpu==2.5.0  
+```
 
 **3.Scipy**
 
+```
 pip install scipy==1.6.0
+```
 
 **4.Matplotlib**
 
+```
 pip install matplotlib==3.3.4  
+```
 
 **5.Cuda**  
 
+```
 conda install -c conda-forge cudatoolkit=11.2  
 conda install -c conda-forge cudnn=8.1.0 
 
@@ -38,6 +49,7 @@ $envVarsPath = Join-Path $env:CONDA_PREFIX 'etc\conda\activate.d\env_vars.bat'
 "set PATH=%CONDA_PREFIX%\Library\bin;%PATH%" | Out-File -FilePath $envVarsPath -Encoding ASCII  
 "set PATH=%CONDA_PREFIX%\Library\lib;%PATH%" | Out-File -FilePath $envVarsPath -Append -Encoding ASCII  
 
+```
 
 # Download the model and run directly
 
