@@ -34,13 +34,13 @@ if __name__ == '__main__':
             Ytest = np.concatenate((Y1, Y2), axis=1)
 
             model_dir = os.path.join(root_dir, d)
-            os.chdir(model_dir)
-            datafile = 'X_scale.npy'
+            #os.chdir(model_dir)
+            datafile = os.path.join(model_dir,'X_scale.npy')
             X_scale = np.load(datafile)
             Xtest_scale = (Xtest - X_scale[0]) / X_scale[1]
 
             # Load the model
-            model = tf.keras.models.load_model(model_dir)
+            model = tf.keras.models.load_model('./saved_model')
 
             # Make predictions
             test_ypred = model.predict(Xtest_scale)
