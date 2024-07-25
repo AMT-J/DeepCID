@@ -58,7 +58,7 @@ Since the model exceeded the limit, we have uploaded all the models and the  inf
 
 **1.Training your model**
 
-Run the file 'one-component-model.py'.The corresponding example data have been uploaded to the folder named 'augmented data'.
+Run the file 'one_component_model.py'.The corresponding example data have been uploaded to the folder named 'augmented data'.
 
 **2.Predict mixture spectra data**
 
