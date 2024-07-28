@@ -55,10 +55,6 @@ Since the model exceeded the limit, we have uploaded all the models and the  inf
 
 Run the file 'one_component_model.py'.The corresponding example data have been uploaded to the folder named 'augmented data'.
 
-**2.Predict mixture spectra data**
-
-Run the file 'DeepCID.py'.An example mixture data have been uploaded at Baidu SkyDrive (named  'mixture.npy', 'label.npy' and 'namedata.csv').Download the model and these example data，DeepCID can be reload and predict easily.
-
 # Paper
 [Paper](https://pubs.rsc.org/en/content/articlehtml/2019/an/c8an02212g)
 
