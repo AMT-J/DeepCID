@@ -27,6 +27,8 @@ if __name__ == '__main__':
     root = os.path.join(path, 'model')
     list_dirs = os.walk(root)
     i = 0
+    # Load the model
+    model = tf.keras.models.load_model('./saved_model')
     for root_dir, dirs, files in list_dirs:
         for d in dirs:
             Y1 = label[i, :].reshape([Xtest.shape[0], 1])
@@ -38,10 +40,6 @@ if __name__ == '__main__':
             datafile = os.path.join(model_dir,'X_scale.npy')
             X_scale = np.load(datafile)
             Xtest_scale = (Xtest - X_scale[0]) / X_scale[1]
-
-            # Load the model
-            model = tf.keras.models.load_model('./saved_model')
-
             # Make predictions
             test_ypred = model.predict(Xtest_scale)
             ypred[i * Xtest.shape[0]:(i + 1) * Xtest.shape[0], :] = test_ypred
